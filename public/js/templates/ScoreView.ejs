@@ -1,0 +1,18 @@
+<div id="scoreWrapper">
+    <div class="score-box">
+        <div class="lives">
+        <% for( var i=0; i<errors; i++) { %>
+            <span class="live_lost"></span>
+        <%} %>
+        <% for( var i=0; i<lives; i++) { %>
+            <span class="live"></span>
+        <%} %>
+        </div>
+    </div>
+    <div class="score-box">
+        <div class="score"><p><strong>SCORE</strong> <%= score %></p></div>
+    </div>
+    <div class="score-box">
+        <div class="rank"><p><strong>RANK</strong> <%= ranking %></p></div>
+    </div>
+</div>

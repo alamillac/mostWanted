@@ -1,0 +1,20 @@
+//local variables
+
+//main
+#landingPage {
+    @extend .box-container;
+
+    .btn-send {
+        @extend .btn-container;
+        @extend .col-xs-12;
+        @extend .col-md-6;
+        @extend .col-md-offset-3;
+
+        a {
+            @extend .col-xs-12;
+            @extend .btn;
+            @extend .btn-lg;
+            @extend .btn-inverse;
+        }
+    }
+}

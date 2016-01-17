@@ -1,0 +1,30 @@
+{
+  "name": "mostWanted",
+  "version": "0.0.1",
+  "homepage": "https://github.com/alamillac/mostWanted",
+  "authors": [
+    "Andres <andres@lamillac.com>"
+  ],
+  "description": "App to test backbonejs library",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.22",
+    "jquery": "~2.2.0",
+    "backbone": "~1.2.3",
+    "underscore": "~1.8.3",
+    "backbone.modelBinder": "backbone.modelbinder#~1.1.0",
+    "jquery-md5": "*",
+    "jGrowl": "jgrowl#~1.4.3",
+    "jquery.cookie": "jquery-cookie#~1.4.1",
+    "Flot": "jquery-flot#~0.8.3",
+    "hammerjs": "~2.0.6"
+  }
+}

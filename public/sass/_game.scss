@@ -1,0 +1,219 @@
+//local variables
+
+//main
+#gamePage {
+    @extend .box-container;
+
+    .button-box {
+        height: 40px;
+        margin-top: 35px;
+
+        button {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            border: 0px;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.2em;
+        }
+    }
+
+    .strong {
+        font-weight: bolder;
+    }
+
+    .inner-box.show_results {
+        cursor: pointer;
+
+        #results {
+            display: block;
+            height: 100%;
+        }
+
+        #noResults {
+            display: none;
+        }
+    }
+
+    .inner-box {
+        .game_status {
+            margin: 0px;
+            position: absolute;
+            height: 30%;
+            top: 35%;
+            width: 100%;
+            text-align: center;
+            opacity: 0.9;
+            -webkit-animation: end_game 3s; /* Chrome, Safari, Opera */
+            animation: end_game 3s;
+        }
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes end_game {
+            0%   {top:0%;}
+            50%  {top:100%;}
+            100% {top:35%;}
+        }
+
+        /* Standard syntax */
+        @keyframes end_game {
+            0%   {top:0%;}
+            50%  {top:100%;}
+            100% {top:35%;}
+        }
+
+        #noResults {
+            padding: 10px;
+            height: 100%;
+            text-align: center;
+
+            .icon-question {
+                display: block;
+                height: 50%;
+                font-size: 50px;
+                //font-size: 7vw;
+            }
+
+            #countdownTimer {
+                height: 50%;
+                padding: 10%;
+            }
+        }
+
+        #results {
+            display: none;
+        }
+
+        #results.correct {
+            .show_incorrect {
+                display: none;
+            }
+        }
+
+        #results.incorrect {
+            .show_correct {
+                display: none;
+            }
+        }
+
+        #results {
+            .alert {
+                padding: 4px;
+            }
+
+            .score, #graph_results {
+                height: 50%;
+            }
+
+            .score {
+                padding: 7px 15px 0px 15px;
+
+                p {
+                    margin-bottom: 5px;
+                    font-size: 0.7em;
+                }
+
+                .more-info {
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+
+                    i {
+                        position: absolute;
+                        top: 4px;
+                        right: 4px;
+                    }
+
+                    .triangle {
+                        width: 0;
+                        height: 0;
+                        border: 15px solid transparent;
+                        border-top-color: $mw-yellow-darker;
+                        border-right-color: $mw-yellow-darker;
+                    }
+                }
+            }
+
+            .face-result {
+                padding: 0px 2px;
+                background-color: $mw-yellow-darker;
+            }
+        }
+    }
+
+    //media queries
+    /* Extra extra small devices (phones, 280px and up) min resolution to play game */
+    @media (min-width: $screen-sm-min) {
+        .inner-box {
+            #results {
+                .alert {
+                    padding: 15px;
+                }
+
+                .score {
+                    padding: 15px 15px 0px 15px;
+
+                    p {
+                        margin-bottom: 5px;
+                        font-size: 1em;
+                    }
+
+                    .more-info {
+                        width: 40px;
+                        height: 40px;
+
+                        i {
+                            top: 6px;
+                            right: 6px;
+                        }
+
+                        .triangle {
+                            border: 20px solid transparent;
+                            border-top-color: $mw-yellow-darker;
+                            border-right-color: $mw-yellow-darker;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Extra small devices (phones, 480px and up) */
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        .inner-box {
+            #results {
+                .alert {
+                    padding: 4px;
+                }
+
+                .score {
+                    padding: 7px 15px 0px 15px;
+
+                    p {
+                        margin-bottom: 5px;
+                        font-size: 0.8em;
+                    }
+
+                    .more-info {
+                        width: 30px;
+                        height: 30px;
+
+                        i {
+                            top: 4px;
+                            right: 4px;
+                        }
+
+                        .triangle {
+                            border: 15px solid transparent;
+                            border-top-color: $mw-yellow-darker;
+                            border-right-color: $mw-yellow-darker;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

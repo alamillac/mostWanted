@@ -1,0 +1,143 @@
+//local variables
+$xxs-box-width: 120px;
+$xs-box-width: 160px;
+$sm-box-width: 180px;
+$md-box-width: 190px;
+$hg-box-width: 200px;
+
+$xxs-box-height: $xxs-box-width * 2;
+$xs-box-height: $xs-box-width * 2;
+$sm-box-height: $sm-box-width * 2;
+$md-box-height: $md-box-width * 2;
+$hg-box-height: $hg-box-width * 2;
+
+//main
+.box-container {
+
+    .inner-box {
+        @extend .col-xs-6;
+        padding: 0px;
+        height: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .info-box {
+        @extend .row-box;
+
+        .entity1 {
+            @extend .background-red;
+        }
+
+        .entity2 {
+            @extend .background-blue;
+        }
+    }
+
+    .contender-box {
+        @extend .info-box;
+
+        .loser {
+            img {
+                opacity: 0.3;
+            }
+        }
+
+        .entity-box {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        //entity-name at bottom
+        .entity-box {
+            position: relative;
+
+            .entity-name {
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+                text-align: center;
+                font-weight: bold;
+                opacity: 0.9;
+            }
+        }
+
+        .entity1 {
+            .entity-name {
+                @extend .background-red;
+            }
+        }
+
+        .entity2 {
+            .entity-name {
+                @extend .background-blue;
+            }
+        }
+    }
+
+    .row-box {
+        @extend .row;
+        margin-left: auto;
+        margin-right: auto;
+        width: $xxs-box-height;
+        height: $xxs-box-width;
+    }
+
+    .button-box {
+        margin-left: auto;
+        margin-right: auto;
+        width: $xxs-box-height;
+    }
+
+    /* Extra small devices (phones, 480px and up) */
+    @media (min-width: $screen-xs-min) {
+        .row-box {
+            width: $xs-box-height;
+            height: $xs-box-width;
+        }
+
+        .button-box {
+            width: $xs-box-height;
+        }
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: $screen-sm-min) {
+        .row-box {
+            width: $sm-box-height;
+            height: $sm-box-width;
+        }
+
+        .button-box {
+            width: $sm-box-height;
+        }
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: $screen-md-min) {
+        .row-box {
+            width: $md-box-height;
+            height: $md-box-width;
+        }
+
+        .button-box {
+            width: $md-box-height;
+        }
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: $screen-lg-min) {
+        .row-box {
+            width: $hg-box-height;
+            height: $hg-box-width;
+        }
+
+        .button-box {
+            width: $hg-box-height;
+        }
+    }
+}

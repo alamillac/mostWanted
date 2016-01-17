@@ -1,0 +1,29 @@
+.icon-menu {
+    @extend .fa;
+    @extend .fa-reorder;
+}
+
+.icon-twitter {
+    @extend .fa;
+    @extend .fa-twitter;
+}
+
+.icon-facebook {
+    @extend .fa;
+    @extend .fa-facebook;
+}
+
+.icon-g-plus {
+    @extend .fa;
+    @extend .fa-google-plus;
+}
+
+.icon-plus {
+    @extend .fa;
+    @extend .fa-plus;
+}
+
+.icon-question {
+    @extend .fa;
+    @extend .fa-question;
+}

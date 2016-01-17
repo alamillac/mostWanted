@@ -1,0 +1,50 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Global values
+// --------------------------------------------------
+
+// Grays
+// -------------------------
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 60%) !default;   // #999
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+// Brand colors
+// -------------------------
+
+$mw-blue:           #4ACCD4 !default;
+$mw-red:            #D61C38 !default;
+$mw-yellow:         #F7B512 !default;
+$mw-veige:          #EEECC9 !default;
+//$mw-veige:          #fae2ae !default;
+
+// Blues
+$mw-blue-darker: lighten($mw-blue, 13.5%) !default;
+$mw-blue-lighter: lighten($mw-blue, 93.5%) !default;
+// Reds
+$mw-red-darker: lighten($mw-red, 13.5%) !default;
+$mw-red-lighter: lighten($mw-red, 93.5%) !default;
+// Yellows
+$mw-yellow-darker: lighten($mw-yellow, 13.5%) !default;
+$mw-yellow-lighter: lighten($mw-yellow, 93.5%) !default;
+
+// Box
+$color-box-default: $mw-veige;
+
+//size variables.
+$step : 36px !default;
+$step_x_1 : $step*1 !default;
+$step_x_2 : $step*2 !default;
+$step_x_3 : $step*3 !default;
+$step_x_4 : $step*4 !default;
+
+//sidebar width
+$sidebar-width : 200px;
+
+//font
+$font-google-roboto: "http://fonts.googleapis.com/css?family=Roboto:400,100,700,300";

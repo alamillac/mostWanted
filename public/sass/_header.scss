@@ -1,0 +1,122 @@
+#mainHeader {
+    .navbar-header {
+        @extend .col-xs-3;
+        @extend .col-sm-4;
+        z-index: 1000;
+        padding: 0px;
+        float: left;
+    }
+
+    .header-center {
+        @extend .col-xs-5;
+        @extend .col-sm-4;
+        padding: 0px;
+        text-align: center;
+        margin: 40px 0px 0px 0px;
+    }
+
+    .header-right {
+        @extend .col-xs-4;
+        @extend .col-sm-4;
+        margin-top: 20px;
+        text-align: right;
+        padding-left: 0px;
+
+        #scoreWrapper {
+            .score-box {
+                width: 75px;
+                margin-right: 0px;
+                margin-left: auto;
+                border-style: solid;
+                border-color: $gray-lighter;
+                border-width: 0px 0px 1px 0px;
+            }
+
+            .lives {
+                .live_lost {
+                    background-color: $mw-veige;
+                    width: 10px;
+                    height: 10px;
+                    display: inline-block;
+                }
+
+                .live {
+                    background-color: $mw-yellow;
+                    width: 10px;
+                    height: 10px;
+                    display: inline-block;
+                }
+            }
+
+            .score, .rank {
+                p {
+                    margin: 0px;
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border: 23px solid transparent;
+        border-top-color: $mw-yellow-darker;
+        border-left-color: $mw-yellow-darker;
+    }
+
+    .icon-menu {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+    }
+
+    .social-buttons {
+        padding: 0px;
+        display: inline-block;
+        list-style: none outside none;
+
+        .social {
+            background-color: #000000;
+            border-radius: 50%;
+            color: #ffffff;
+            display: inline-block;
+            font-size: 1.1em;
+            text-align: center;
+            width: 1.4em;
+            margin-right: 12px;
+
+            .social-count {
+                @extend .badge;
+                @extend .background-yellow;
+
+                border-radius: 50%;
+                font-size: 0.5em;
+                height: 2em;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 6px;
+                position: absolute;
+                top: 5px;
+                width: 2em;
+                color: #000;
+            }
+        }
+    }
+
+    /* Extra small devices (phones, 480px and up) */
+    @media (min-width: $screen-xs-min) {
+        .social-buttons {
+            .social {
+                font-size: 1.3em;
+                width: 1.5em;
+                margin-right: 20px;
+
+                .social-count {
+                    height: 2.5em;
+                    width: 2.5em;
+                }
+            }
+        }
+    }
+}

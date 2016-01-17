@@ -1,0 +1,83 @@
+//local variables
+$color-input: $gray-lighter;
+$size-logo: 130px;
+$height-social-box: 140px;
+
+//main
+#loginPage {
+    @extend .col-md-push-4;
+    @extend .col-xs-12;
+    @extend .col-md-4;
+
+    .brand-box {
+        text-align: center;
+
+        .logo {
+            width: $size-logo;
+            height: $size-logo;
+        }
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    button {
+        background-color: black;
+        font-weight: bolder;
+        color: white;
+        border: 0px;
+        width: 100%;
+        height: 35px;
+        border-radius: 0px;
+    }
+
+    .box-group {
+        @extend .row;
+        height: $height-social-box;
+        margin: 0px;
+
+        .box-login {
+            @extend .col-xs-6;
+            height: 100%;
+            display: table;
+
+            a {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+
+                i {
+                    color: white;
+                    font-size: 3.5em;
+                }
+            }
+        }
+
+        .color-background-1 {
+            @extend .background-red;
+        }
+
+        .color-background-2 {
+            @extend .background-blue;
+        }
+    }
+
+    #loginForm {
+            padding-top: 30px;
+
+            .form-group {
+                .form-control {
+                    text-align: center;
+                    background-color: $color-input;
+                    color: black;
+                    font-weight: bolder;
+                    border-radius: 0px;
+                }
+            }
+
+            button {
+                margin-top: 30px;
+            }
+        }
+}
