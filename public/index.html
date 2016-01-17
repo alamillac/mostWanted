@@ -17,16 +17,84 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header id="mainHeader" class="header"></header>
+        <header id="mainHeader" class="header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div class="triangle"></div>
+                        <a href="" id="menu-toggle" type="button">
+                            <i class="icon-menu"></i>
+                        </a>
+                    </div>
+                    <div class="header-center">
+                        <ul class="social-buttons">
+                            <li class="social"><i class="icon-facebook"></i><span class="social-count">19k</span></li>
+                            <li class="social"><i class="icon-twitter"></i><span class="social-count">19k</span></li>
+                            <li class="social"><i class="icon-g-plus"></i><span class="social-count">19k</span></li>
+                        </ul>
+                    </div>
+                    <div class="header-right"></div>
+                </div>
+            </nav>
+        </header>
         <!-- Sidebar -->
         <div id="wrapper">
-            <aside id="sidebar-wrapper"></aside>
+            <aside id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li>
+                        <a class="color-mw-red" href="#leaderboard">Leaderboard</a>
+                    </li>
+                    <li>
+                        <a class="color-mw-yellow" href="#terms">Terms &amp; Conditions</a>
+                    </li>
+                    <li>
+                        <a class="color-mw-blue" href="#privacy">Privacy statement</a>
+                    </li>
+                    <li>
+                        <a class="upper color-white" href="#contact">Contact</a>
+                    </li>
+                    <li id="sidebar-footer">
+                        <a href="/">
+                            <img class="img-responsive" src="images/whos_the_most_wanted.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </aside>
             <!-- /#sidebar-wrapper -->
-            <main id="page-content-wrapper" class="container" >
-                <section id="content" class="main-content"></section>
+            <main id="page-content-wrapper" class="container">
+                <section id="content" class="main-content">
+                    <div class="row">
+                        <div id="landingPage">
+                            <div class="info-box">
+                                <div class="inner-box">
+                                    <img alt="Who is the most wanted" title="Who is the most wanted" class="logo img-responsive" src="images/whos_the_most_wanted.jpg">
+                                </div>
+                                <div class="inner-box background-yellow">
+                                    <p class="intro h4 text-right"><span class="highlight">Who is the most wanted Celebrity?</span></p>
+                                </div>
+                            </div>
+                            <div class="contender-box">
+                                <div class="inner-box entity-box entity1">
+                                    <img title="Justin Bieber" alt="Justin Bieber" class="person loser img-responsive" src="images/justin.jpg">
+                                    <div class="entity-name">Justin Bieber</div>
+                                </div>
+                                <div class="inner-box entity-box entity2">
+                                    <img title="Brad Pitt" alt="Brad Pitt" class="person img-responsive" src="images/brad.jpg">
+                                    <div class="entity-name">Brad Pitt</div>
+                                </div>
+                            </div>
+
+                            <div class="button-box">
+                                <div class="btn-send">
+                                    <a class="_send_action" href="#game">TRY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
-        <footer id="mainFooter" class="footer"></footer>
+        <footer id="mainFooter" class="footer"><div><p class="text-center">Powered by Google</p></div></footer>
         <div class="modal-wrapper"></div>
         <div class="msg-modal-wrapper"></div>
         <div class="moreinfo-modal-wrapper"></div>
