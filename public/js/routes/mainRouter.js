@@ -128,7 +128,7 @@ define([
 
             console.log("Se OCULTO el waiting:" + this.waitingCount);
             this.waitingCount--;
-            if (this.waitingCount == 0) {
+            if (this.waitingCount === 0) {
                 $modal.modal('hide');
             }
             else if (this.waitingCount < 0) {

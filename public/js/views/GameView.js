@@ -38,17 +38,12 @@ define([
             this.scoreView = new ScoreView({ el: $headerScore, model: this.model });
         },
 
-        updateScore: function() {
-            this.scoreView.render();
-        },
-
         getNewGame: function() {
             var that = this;
             this.model.fetch({
                 success:function(model, response) {
                     that.showContenders(model.get("last_match").contenders);
                     that.createTimer();
-                    //that.updateScore();
                 }
             });
         },
@@ -249,9 +244,6 @@ define([
                 $('.game_status').removeClass('hidden');
                 $('._next_match').text('PLAY AGAIN');
             }
-
-            //update the score view
-            //that.updateScore();
         },
 
         timeOver: function() {

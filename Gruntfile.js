@@ -47,7 +47,7 @@ module.exports = function(grunt) {
             },
             compile: {
                 files: {
-                    'public/js/templates.js': ['public/js/templates/*.ejs']
+                    'public/js/templates.js': ['public/js/templates/*.ejs'] //Compile underscore templates
                 }
             }
         },
